@@ -1,0 +1,19 @@
+<!--<ul *ngIf='pokemons'>
+  <li *ngFor='let poke of pokemons.results'>
+    <img [src]='poke.avatar'>
+    <p>{{ poke.name }}</p>
+  </li>
+</ul>-->
+<div class="pokemon-view">
+    <div class="container-input">
+      <input type="text" placeholder="search pokemon...." [(ngModel)]="query">
+    </div>
+    <div class="grid" *ngIf="pokemons">
+      <div class="column" *ngFor="let pokemon of pokemons.results | paginate: { itemsPerPage: 10, currentPage: p } | search: query" [routerLink]="['/detail', pokemon.name]">
+        <p>{{ pokemon.name }}</p>
+      </div>
+    </div>
+  </div>
+  <ul class="pagination">  
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>  
+  </ul>  

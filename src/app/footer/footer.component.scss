@@ -1,0 +1,24 @@
+@import '../../../src/sass/variables';
+@import '../../../src/sass/mixins';
+
+
+footer{
+	width:100%;
+	height:80px;
+    border-top: 5px solid darkred;
+  background:$colorFontPricinpal;	
+	position:fixed;
+    bottom: 0px;    
+  	left: 0;
+  	right: 0;
+    overflow:hidden;
+      
+      #powered{
+        width:100%;
+        text-align: center;
+        color:#fff;
+        font-size:12px;
+    }
+}
+
+
