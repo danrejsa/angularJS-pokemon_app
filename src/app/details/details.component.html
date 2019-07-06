@@ -1,6 +1,24 @@
-<div class="pokemon-view">
-    <div class="container-form">
-        <p>{{ pokemon.name }}</p>
-    </div>
+<section class='container'>
+    <div class='container-inner'>
+        <div class='pokemon-header-img'>
+         
+            <div><h1>{{ pokemon.name }}</h1></div>
+            <img  src="{{pokemon.sprites.front_default}}" alt='loading image' >            
+        </div>
+        <div class='pokemon-detail'>
+                <div class='pokemon-detail-content'><strong>Weight: &nbsp; &nbsp;</strong><span>{{  pokemon.weight }}</span></div>
+                <div class='pokemon-detail-content'><strong>Height: &nbsp; &nbsp;</strong><span>{{  pokemon.height }}</span></div> 
+                <div class='pokemon-detail-content'><strong>Effort: &nbsp; &nbsp;</strong><span>{{pokemon.stats[0].effort}}</span></div>      
+                <div class='pokemon-detail-content'><strong>Stat: &nbsp; &nbsp;</strong><span>{{pokemon.stats[0].stat.name}}</span></div>              
+                <div class='pokemon-detail-content'><strong>Type: &nbsp; &nbsp;</strong><span>{{pokemon.types[0].type.name}}</span></div>
+                <div class='pokemon-detail-content'><strong>base_stat: &nbsp; &nbsp;</strong><span>{{  pokemon.stats[0].base_stat }}</span></div>                
+                <div class='pokemon-detail-content'><strong>Ability: &nbsp; &nbsp;</strong><span>{{ pokemon.abilities[0].ability.name}}</span></div> 
+                <div class='pokemon-detail-content'><strong>Moves: &nbsp; &nbsp;</strong><span>{{ pokemon.moves[0].move.name }}</span></div>   
+                <div class='pokemon-detail-content'><strong>Base_experience: &nbsp; &nbsp;</strong><span>{{  pokemon.base_experience }}</span></div> 
+        </div>
+    </div>   
+</section>
+
+    
    
-  </div>
+ 

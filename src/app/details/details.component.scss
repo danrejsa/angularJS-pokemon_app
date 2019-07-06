@@ -2,16 +2,51 @@
 @import '../../../src/sass/mixins';
 
 
+.container{
+    margin-top:2rem;  
+    width:60%;
+    display:block; 
+    height:450px;
+    border-radius:5px;
 
-  .container-form {
-      display: flex;
-      color:white;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      background:$colorFontPricinpal;
-      height:150px;
-  }
+      .container-inner{
+        border:1px solid $colorFontPricinpal;
+        color:$colorFontPricinpal;    
+        background: $salmon;
+        height:70%;  
+        margin-bottom:2rem;
+        width:100%;
+        border-radius: 5px;
+        margin-left:auto;
+        margin-right:auto;   
+        display:flex;
+
+          .pokemon-header-img{
+            width:50%;
+            margin-left:15px;
+           
+
+        img {
+          height: 150px;
+          width:100px;
+          margin-left:2rem;
+          margin-top:1rem;
+  
+        }
+      }
+    .pokemon-detail{
+        width:40%;
+        float:right;       
+        margin-top:2rem;
+        
+        span {
+          color:$salmonSec;     
+        }
+      }
+    }
+    
+    
+}
 
   
 

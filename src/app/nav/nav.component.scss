@@ -6,25 +6,28 @@ header {
 
     .logo {
         font-weight: bold;
+        text-decoration:none;        
     }
 
     nav {
-        justify-self: right;
+        justify-self: right;        
 
         ul {
             list-style-type: none;
-            margin:0; padding:0;
+            margin:0; padding:0;            
 
             li {
-                float: left;
+                float: left;               
 
                 a {
                     padding: 1.5em;
                     text-transform: uppercase;
                     font-size: .8em;
+                    
 
                     &:hover {
-                        background: burlywood
+                        background: $colorFont;
+                        text-decoration:none
                     }
                 }
             }

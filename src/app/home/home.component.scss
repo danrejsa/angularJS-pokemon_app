@@ -1,29 +1,30 @@
 @import '../../../src/sass/variables';
 @import '../../../src/sass/mixins';
 
+
+
 .pokemon-view {
-  background-color: wheat;  
-  min-height: 60vh;
+  background-color: $salmon; 
 
   .container-input {
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    width: 50%;
-
-    input {
-      margin-top: 24px;
-      margin-bottom: 24px;
+      margin: 0 auto;
+      text-align: center;
       border-radius: 10px;
-      color: $colorFont;
-      border: solid 2px $colorFontPricinpal;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 10px 15px;
+      width: 50%;
 
-      &:focus {
-        outline: none;
-      }
+      input {
+          margin-top: 24px;
+          margin-bottom: 24px;
+          border-radius: 10px;
+          color: $colorPlayStore;
+          border: solid 2px $colorFontPricinpal;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 10px 15px;
+
+           &:focus {
+               outline: none;
+            }
 
       &::placeholder {
         opacity: 0.5;
@@ -40,16 +41,22 @@
     grid-auto-rows: 120px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 15px;
+    margin-bottom: 2rem;
   }
 
   .column {
+    margin-bottom: 1.5rem;
     text-align: center;
-    background-color: white;
-    color: #000;
+    background-color: $colorBackground;
+    color: $colorPlayStore;
     border-radius: 10px;
     cursor: pointer;
     transition: all .1s ease-in-out;
     box-shadow: 0px 6px 10px 1px rgba(36, 37, 38, 0.08);
+
+    p{
+      margin-top:13%;
+    }
 
     &:focus {
       outline: none;

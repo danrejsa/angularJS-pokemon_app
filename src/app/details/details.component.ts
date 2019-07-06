@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
-import { Observable } from 'rxjs';
-import { FormsModule } from '@angular/forms'
-import { pokemonClass } from '../shared/AbstractClass/pokemonClass';
+import { pokemonClass } from '../logic/myClass/pokemonClass';
 
 @Component({
   selector: 'app-details',
@@ -14,5 +10,6 @@ export class DetailsComponent extends pokemonClass implements OnInit {
 
 ngOnInit() {
   this.getPokemonId()
+  
 }
 }

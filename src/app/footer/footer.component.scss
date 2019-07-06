@@ -2,21 +2,28 @@
 @import '../../../src/sass/mixins';
 
 
+
 footer{
 	width:100%;
-	height:80px;
-    border-top: 5px solid darkred;
+	height:125px;
+  border-top: 5px solid $darkred;
   background:$colorFontPricinpal;	
-	position:fixed;
-    bottom: 0px;    
-  	left: 0;
-  	right: 0;
-    overflow:hidden;
+	position:relative;     
+  left: 0;
+  right: 0; 
+  padding-bottom: 0;
+
+ 
+  img{    
+    height:50px;
+    margin-left:45%;
+    margin-top:0.2rem;
+  }
       
       #powered{
         width:100%;
         text-align: center;
-        color:#fff;
+        color:$colorBackground;
         font-size:12px;
     }
 }

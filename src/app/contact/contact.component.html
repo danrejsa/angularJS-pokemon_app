@@ -1,3 +1,28 @@
-<p>
-  This is Contact Page!
-</p>
+<h1>Contact us</h1>
+<form [formGroup]='messageForm' (ngSubmit)='onSubmit()'>
+<label>
+  Name:
+  <input  formControlName='name'>
+  <div *ngIf='submitted && messageForm.controls.name.errors' class='error'>
+      <div *ngIf='messageForm.controls.name.errors.required'>Your name is required</div>
+  </div>
+</label>
+<label>
+    Email:
+    <input  formControlName='email'>
+    <div *ngIf='submitted && messageForm.controls.email.errors' class='error'>
+        <div *ngIf='messageForm.controls.email.errors.required'>Your email is required</div>
+    </div>
+  </label>
+  <label>
+    Message:
+    <textarea formControlName='message'></textarea>
+    <div *ngIf='submitted && messageForm.controls.message.errors' class='error'>
+        <div *ngIf='messageForm.controls.message.errors.required'> A message is required!</div>
+    </div>
+  </label>
+  <input class='send' type='submit'  value='send message' > 
+</form>
+
+
+

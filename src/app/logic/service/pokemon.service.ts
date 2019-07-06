@@ -13,10 +13,10 @@ import { PokemonId } from '../models/pokemonId';
 export class PokemonService {  
   pokeApi: any;
   constructor(private http: HttpClient) {  
-    this.pokeApi = 'https://pokeapi.co/api/v2/pokemon/?limit=60'
+    this.pokeApi = 'https://pokeapi.co/api/v2/pokemon/?limit=800'
   }
   
-  getPokemon(): Observable<Pokemon[]> {
+getPokemon(): Observable<Pokemon[]> {
     return this.http.get<Pokemon[]>(`${this.pokeApi}`)
     .pipe(
      catchError(this.handleError)
@@ -24,7 +24,7 @@ export class PokemonService {
   }
 
   getPokemonId(id): Observable<PokemonId> {
-   return this.http.get<PokemonId>(`${this.pokeApi}/${id}`)
+   return this.http.get<PokemonId>(`https://pokeapi.co/api/v2/pokemon/${id}`)
    .pipe(
      catchError(this.handleError)
    );
