@@ -6,35 +6,25 @@ export class PokemonId {
   sprites: Sprites;
   weight: number;
   height: number;
-  stats: string;
-  types: string;
-  abilities: string;
-  moves: string;
+  stats: Stats;
+  types: Types;
+  abilities: Abilities;
+  moves: Moves;
   base_experience: number;
-  effort:any;
-  stat: any;
-  type: any;
-  base_stat: any;
-  ability: any;
-  move: any
+  
 
   constructor(
     name: string,
     id: number,
     sprites: Sprites,
+    stats: Stats,
+    types: Types,
+    abilities: Abilities,
+    moves: Moves,
     weight: number,
-    height: number,
-    stats: string,
-    types: string,
-    abilities: string,
-    moves: string,
-    base_experience: number,
-    effort:any,
-    stat: any,
-    type: any,
-    base_stat: any,
-    ability: any,
-    move: any
+    height: number,    
+    base_experience: number
+    
   ) {
     this.name = name;
     this.id = id;
@@ -46,12 +36,7 @@ export class PokemonId {
     this.abilities = abilities;
     this.moves = moves;
     this.base_experience = base_experience;
-    this.effort= effort;
-    this.stat= stat;
-    this.type= type;
-    this.base_stat= base_stat;
-    this.ability= ability;
-    this.move= move
+    
 
   }
 }
@@ -62,3 +47,33 @@ export class Sprites {
     this.front_default = front_default;
   }
 }
+export class Stats {
+    effort: string;
+    stat: string;
+    base_stat: string;
+
+    constructor(effort: string, stat: string, base_stat: string ) {
+      this.effort = effort;
+      this.stat = stat;
+      this.base_stat = base_stat;
+    }
+  }
+  export class Types {
+    type: string;
+    constructor(type: string) {
+      this.type = type;
+    }
+  }
+  export class Abilities {
+    ability: string;
+    constructor(ability: string) {
+      this.ability = ability;
+    }
+  }
+
+  export class Moves {
+    move: string;
+    constructor(move: string) {
+      this.move = move;
+    }
+  }
