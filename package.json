@@ -14,7 +14,6 @@
   "dependencies": {
     "@angular-devkit/build-ng-packagr": "^0.801.0",
     "@angular/animations": "~7.2.0",
-    "@angular/cli": "^8.1.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
     "@angular/compiler-cli": "^7.2.15",
