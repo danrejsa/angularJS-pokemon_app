@@ -11,7 +11,8 @@ import { pokemonClass } from '../logic/myClass/pokemonClass';
 
 export class HomeComponent extends pokemonClass implements OnInit {
 query: string;
-  
+p: string;
+
 ngOnInit() {   
 this.getPokemons();
     }

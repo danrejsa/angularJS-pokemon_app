@@ -8,6 +8,14 @@ import { pokemonClass } from '../logic/myClass/pokemonClass';
 })
 export class DetailsComponent extends pokemonClass implements OnInit {
 
+  weight: string;
+  height: string;
+  stats: string;
+  types: string;
+  abilities: string;
+moves:string;
+base_experience:string;
+
 ngOnInit() {
   this.getPokemonId()
   
