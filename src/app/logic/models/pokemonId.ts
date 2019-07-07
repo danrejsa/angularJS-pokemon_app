@@ -11,12 +11,12 @@ export class PokemonId {
   abilities: string;
   moves: string;
   base_experience: number;
-  effort:string;
-  stat: string;
-  type: string;
-  base_stat: String;
-  ability: string;
-  move: string
+  effort:any;
+  stat: any;
+  type: any;
+  base_stat: any;
+  ability: any;
+  move: any
 
   constructor(
     name: string,
@@ -29,12 +29,12 @@ export class PokemonId {
     abilities: string,
     moves: string,
     base_experience: number,
-    effort:string,
-    stat: string,
-    type: string,
-    base_stat: String,
-    ability: string,
-    move: string
+    effort:any,
+    stat: any,
+    type: any,
+    base_stat: any,
+    ability: any,
+    move: any
   ) {
     this.name = name;
     this.id = id;
