@@ -14,6 +14,13 @@ types: string;
 abilities: string;
 moves:string;
 base_experience:number;
+effort:string;
+stat: string;
+type: string;
+base_stat: String;
+ability: string;
+move: string
+
 
 ngOnInit() {
   this.getPokemonId()

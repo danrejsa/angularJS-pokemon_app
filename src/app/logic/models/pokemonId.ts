@@ -1,3 +1,5 @@
+import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
+
 export class PokemonId {
   name: string;
   id: number;
@@ -9,6 +11,12 @@ export class PokemonId {
   abilities: string;
   moves: string;
   base_experience: number;
+  effort:string;
+  stat: string;
+  type: string;
+  base_stat: String;
+  ability: string;
+  move: string
 
   constructor(
     name: string,
@@ -20,7 +28,13 @@ export class PokemonId {
     types: string,
     abilities: string,
     moves: string,
-    base_experience: number
+    base_experience: number,
+    effort:string,
+    stat: string,
+    type: string,
+    base_stat: String,
+    ability: string,
+    move: string
   ) {
     this.name = name;
     this.id = id;
@@ -32,6 +46,13 @@ export class PokemonId {
     this.abilities = abilities;
     this.moves = moves;
     this.base_experience = base_experience;
+    this.effort= effort;
+    this.stat= stat;
+    this.type= type;
+    this.base_stat= base_stat;
+    this.ability= ability;
+    this.move= move
+
   }
 }
 
