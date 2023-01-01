@@ -23,7 +23,7 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
-    "@angular-devkit/build-angular": "^0.801.0",
+    "@angular-devkit/build-angular": "^15.0.4",
     "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.1",
     "@trademe/ng-defer-load": "^3.0.1",
     "angular-image-slider": "0.0.8",
@@ -40,7 +40,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.801.0",
+    "@angular-devkit/build-angular": "^15.0.4",
     "@angular-devkit/core": "^8.1.0",
     "@angular/cli": "^8.1.0",
     "@angular/language-service": "~8.1.0",
